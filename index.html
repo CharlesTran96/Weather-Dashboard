@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <h1 class="text-center">Weather Dashboard</h1>
+        </nav>
+
+        <section class="px-4">
+            <section class="row">
+                <div class="col-3">
+                    <form id="form-search">
+                      <h2>Search for a City:</h2>
+                      <input id="input-city" type="text" placeholder="New York">
+                      <button class="btn btn-primary btn-block">Search</button>
+                    </form>
+
+                    <ul>
+                        <li>Perth</li>
+                        <li>Sydney</li>
+                    </ul>
+                </div>
+
+                <div class="col-9">
+                    <section class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <h3 class="card-header bg-info">
+                                  <span id="span-city-date"></span>
+                                </h3>
+                                <div class="card-body">
+                                  <img id="img-today-icon">
+                                  <p class="card-text">
+                                    <ul>
+                                        <li>Temp: <span id="span-today-temp"></span>°C</li>
+                                        <li>Wind: <span id="span-today-wind"></span>M/S</li>
+                                        <li>Humidity: <span id="span-today-humidity"></span>%</li>
+                                        <li>UV Index: <span id="span-today-uvi"></span></li>
+                                    </ul>
+                                  </p>
+                                </div>
+                              </div>
+                        </div>
+                    </section>
+
+                    <section class="row">
+                        <article class="col-2">
+                            <div class="card">
+                                <h3 class="card-header bg-info">
+                                  Service 1
+                                </h3>
+                                <div class="card-body">
+                                  <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium dolor at, blanditiis rem
+                                    quisquam ipsam ipsum. Magnam ut quibusdam facilis consequatur veritatis, ullam molestiae, inventore
+                                    neque,
+                                    quas obcaecati laborum?
+                                  </p>
+                                </div>
+                              </div>
+                        </article>
+                        <article class="col-2"></article>
+                        <article class="col-2"></article>
+                        <article class="col-2"></article>
+                        <article class="col-2"></article>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
